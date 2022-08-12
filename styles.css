@@ -1,0 +1,82 @@
+*{
+
+    font-family: 'Roboto', sans-serif;
+    color: black; 
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sidebar header header header"
+      "sidebar projects projects trend"
+      "sidebar projects projects trend";
+      max-width: 80%vw;
+      max-height: 80%vh;
+      margin:auto;
+      border:green dashed;
+  }
+  
+  .sidebar { grid-area: sidebar; }
+
+  .sidebarDiv {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border:dashed red;
+    gap:30px;
+    margin-top:20vh;
+  }
+
+  .sidebarDiv button{
+    flex-grow: 1;
+    padding:15px;
+  }
+  
+  .header { grid-area: header; }
+
+  
+  .projects { grid-area: projects; }
+
+  .projectsDiv{
+    display:flex;
+    flex-wrap: wrap;
+    border:dashed yellow;
+    gap:30px;
+    justify-content: space-evenly;
+  }
+
+  .projectItem{
+    width:45%;
+    height:45%;
+    background-color: lightcoral;
+    padding:10px;
+  }
+  
+  .trend { grid-area: trend; }
+  
+
+  .announceDiv {
+    display: flex;
+    border:solid purple;
+    flex-direction: column;
+    }
+
+.announceItem {
+    background:tan;
+    padding:10px;
+}
+
+
+.trendDiv {
+    display: flex;
+    border:dashed gray;
+    flex-direction: column;
+    }
+
+.trendItem{
+    background:orange;
+    padding:5px;
+}
