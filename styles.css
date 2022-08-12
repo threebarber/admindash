@@ -35,7 +35,18 @@
     padding:15px;
   }
   
-  .header { grid-area: header; }
+
+  .header {
+    display: grid; 
+    grid-template-columns: 1.2fr 0.8fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "search profile"
+      "hi headbuttons"; 
+    grid-area: header; 
+  }
+
 
   
   .projects { grid-area: projects; }
@@ -79,4 +90,29 @@
 .trendItem{
     background:orange;
     padding:5px;
+}
+
+
+/*subgrid items*/
+
+.search { 
+    grid-area: search; 
+}
+
+.searchDiv {
+    display:flex;
+    padding:30px;
+    border:green dashed;
+}
+
+
+.hi { grid-area: hi; }
+.profile { grid-area: profile; }
+
+.headbuttons { grid-area: headbuttons; }
+
+.headbuttonDiv {
+    display:flex;
+    justify-content: space-evenly;
+    border:dashed blue;
 }
