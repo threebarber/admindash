@@ -6,14 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    <link rel="icon" type="image/x-icon"
-        href="fav.png">
+    <link rel="icon" type="image/x-icon" href="fav.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
@@ -34,29 +34,25 @@
             </div>
         </div>
         <div class="header">
-                <div class="search">
-                    <div class="searchDiv"> 
-                        <button type="button">Submit</button>
+            <div class="headertop">
+                <div class="searchDiv">
+                    <form><button type="button">Submit</button>
                         <input type="text" size="70" placeholder="Search.." name="search">
-                    </div>
+                    </form>
+                    
+                    <i class="fa fa-bell fa-2x"></i>
+                    <i class="fa fa-user fa-3x"></i>
+                    <p style="font-weight:900;"><strong>Jimmy Dean</strong></p>
                 </div>
-                <div class="hi"></div>
-                <div class="profile"></div>
-                <div class="headbuttons">
-                    <div class="headbuttonDiv">
-                        <button>New</button>
-
-                        <button>Upload</button>
-
-                        <button>Share</button>
-
-                    </div>
-                </div>
+            </div>
+            <div class="headerbottom">
+                
+            </div>
         </div>
         <div class="projects">
             <h2>Projects</h2>
             <div class="projectsDiv">
-                
+
                 <div class="projectItem">
                     <h3>Words 083</h3>
                     <p>more words words more words words more words words more words words</p>
@@ -128,7 +124,7 @@
                 </div>
             </div>
         </div>
-      </div>
+    </div>
 
     <script src="scripts.js"></script> <!-- external scripts file with logic-->
 </body>

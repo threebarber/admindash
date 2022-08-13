@@ -35,17 +35,24 @@
     padding:15px;
   }
   
-
   .header {
     display: grid; 
-    grid-template-columns: 1.2fr 0.8fr; 
+    grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      "search profile"
-      "hi headbuttons"; 
+      "headertop"
+      "headerbottom"; 
     grid-area: header; 
   }
+
+  
+  .headertop { grid-area: headertop; }
+
+
+
+
+  .headerbottom { grid-area: headerbottom; }
 
 
   
@@ -101,13 +108,37 @@
 
 .searchDiv {
     display:flex;
-    padding:30px;
+    padding:15px;
     border:green dashed;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
 .hi { grid-area: hi; }
+
+.hiDiv{
+    display:flex;
+    justify-content: flex-start;
+    border:dashed orange;
+    align-items: center;
+    margin:5px;
+}
+
+.hiDiv i{
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+
 .profile { grid-area: profile; }
+
+.profileDiv {
+    display:flex;
+    justify-content: space-evenly;
+    border:dashed brown;
+    align-items: center;
+}
 
 .headbuttons { grid-area: headbuttons; }
 
