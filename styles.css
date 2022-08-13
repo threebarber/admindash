@@ -52,7 +52,8 @@
     
     
     grid-area: headertop; 
- 
+    display:flex;
+    justify-content: space-between;
 }
 
 
@@ -148,6 +149,7 @@
     justify-content: space-evenly;
     border:dashed brown;
     align-items: center;
+    width:30%
 }
 
 .headbuttons { grid-area: headbuttons; }
