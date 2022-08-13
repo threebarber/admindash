@@ -2,6 +2,7 @@
 
     font-family: 'Roboto', sans-serif;
     color: black; 
+    box-sizing: border-box;
 }
 
 .container {  display: grid;
@@ -47,12 +48,22 @@
   }
 
   
-  .headertop { grid-area: headertop; }
+  .headertop { 
+    
+    
+    grid-area: headertop; 
+ 
+}
 
 
 
 
-  .headerbottom { grid-area: headerbottom; }
+  .headerbottom { 
+    
+    grid-area: headerbottom; 
+    display:flex;
+    justify-content: space-between;
+}
 
 
   
@@ -118,11 +129,10 @@
 .hi { grid-area: hi; }
 
 .hiDiv{
-    display:flex;
+    display:inline-flex;
     justify-content: flex-start;
     border:dashed orange;
     align-items: center;
-    margin:5px;
 }
 
 .hiDiv i{
@@ -144,11 +154,15 @@
 
 .headbuttonDiv {
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     border:dashed blue;
+    margin-right: 10px;
+    width:20%
 }
 
 
 .headbuttonDiv button{
-    padding:15px;
+    width:75px;
+    height:30px;
 }
