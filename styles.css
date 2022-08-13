@@ -40,7 +40,7 @@
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
+    gap: 10px 10px; 
     grid-template-areas: 
       "headertop"
       "headerbottom"; 
@@ -83,6 +83,7 @@
     height:45%;
     background-color: lightcoral;
     padding:10px;
+    border-radius: 1rem;
   }
   
   .trend { grid-area: trend; }
